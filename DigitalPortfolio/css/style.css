@@ -1,0 +1,578 @@
+/* Universal code */
+
+/* General settings for all sites */
+
+    footer {
+        padding: 0.01% 1% 1%;
+        height: 30px;
+        background-color: #4a415a;
+        opacity: 70%;
+    }
+
+    header{
+        transition: 0.5s;
+        padding: 0.01% 1% 1%;
+        background-color: #609474;
+        opacity: 70%;
+    }
+
+/* Code for centralising h1 code in the top table */
+    header h1{
+        transition: 0.5s;
+        padding: 1%;
+        background-color: #60946b;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-style: bold;
+        font-size: 150%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0%;
+    }
+
+    @media (max-width:768){
+        header {
+            opacity: 95%;
+        }
+    }
+
+/* Code for handling what happens when you hover over the top bar */
+    header:hover {
+        opacity: 95%;
+        transition: 0.5s;
+        header h1{
+            opacity: 100%;
+        }
+    }
+
+    header:hover h1{
+        transition: 0.5s;
+        opacity: 95%;
+        font-size: 200%;
+    }
+
+/* Code for the flexcontainer containing the buttons */
+    .flexcontainer { 
+        height: 0%;
+        transition: 0.7s;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box; 
+    }
+
+/* Code for iframe */
+    iframe { 
+        opacity: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 400px;
+        height: 225px;
+        margin: 0% 5% 5%;
+        border-radius: 12px;
+    }
+/* Button and button class settings */
+    .button {
+        color: rgba(0, 0, 0, 0);
+    }
+    @media (max-width:768px) {
+        .button {
+            color:white;
+        }
+        .flexcontainer {
+            height: 20%;
+        }
+        .button {
+            padding: 5% 10%;
+            background-color: #5512c1;
+            display: inline-block;
+            margin: -4% 2%;
+        }
+    }
+
+    header:hover .flexcontainer {
+        transition: 0.7s;
+        height: 20%;
+
+        .button {
+            padding: 5% 10%;
+            background-color: #72ce89;
+            display: inline-block;
+            margin: -4% 2%;
+            transition: 0.5s;
+            color:rgb(0, 0, 0);
+        }
+        @media (max-width:768px){
+            .button {
+                width: 40%;
+                font-size: 75%;
+            }
+        }
+
+        .button:link {
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #21b0db;
+            font-size: 18px;
+            text-decoration: underline;
+            transition: 0.5s;
+        }
+        @media (max-width:768px){
+            .button:hover {
+                width: 40%;
+                font-size: 15px;
+            }
+        }
+
+        .button:active {
+            text-decoration: underline;
+        }
+    }
+
+/* Background code */
+    body{
+        background-position: center;
+        background-color: #ffffff;
+        background-repeat: repeat;
+        size: 100%;
+        background-size: cover;
+    }
+
+/* Class for links shown in the buttons */
+    .linkclass{
+        float:left;
+        width: 25%;
+    }
+
+/* General styling for textboxes */
+    .textbox {
+        border-radius: 12px;
+        margin: 2% 5%;
+        background-color: #ffffff;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width:768px){
+        .textbox {
+            width: 100%;
+        }
+    }
+
+    .textbox h1{
+        text-align: center;
+        display: block;
+        padding: 2%;
+        background-color: #e5ecff;
+        font-style: italic;
+        font-size: 150%;
+        margin: 20px auto;
+        width: 80%
+    }
+    .textbox p{
+        color:rgb(0, 0, 0);
+        font-size: 100%;
+        padding: 0% 4% 2%;
+        margin: 0px 20px 5px;
+    }
+
+/* General styling for images */
+    img {
+        transition: 0.5s;
+        padding: 0% 3% 2%;
+        width: 20%;
+    }
+
+/* General styling for how page content looks */
+    .pagecontent {
+        box-sizing: border-box;
+        padding: 2%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+/* List styling */
+    ul {
+        margin: 0% 5% 5%;
+    }
+
+    ol {
+        margin: 0% 5% 5%;
+    }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Index HTML Style */
+
+    #quickintro.textbox {
+        transition: 0.5s;
+        margin: auto;
+        background-color: #d8ceee;
+    }
+
+    img.picofme {
+        border-radius: 50%;
+        opacity: 0%;
+        width: 15%;
+    }
+
+    #quickintro.textbox h1 {
+        transition: 0.5s;
+        background-color: #d8ceee;
+        color: rgb(0, 0, 0);
+    }
+
+    #quickintro.textbox p {
+        text-align: center;
+        transition: 0.5s;
+        color: #d8ceee;
+    }
+
+    #quickintro:hover {
+        transition: 0.5s;
+        background-color: #d8e5ff;
+        img.picofme {
+            opacity: 100%;
+            width: 18%;
+        }
+    }
+
+    #quickintro:hover h1 {
+        transition: 0.5s;
+        background-color: #616b81;
+        color: white;
+    }
+
+    #quickintro:hover p {
+        transition: 0.5s;
+        color: rgb(0, 0, 0);
+    }
+
+    @media (max-width:768px){
+        #quickintro.textbox {
+            background-color: #d8e5ff;
+            img.picofme {
+                opacity: 100%;
+                width: 18%;
+            }
+        }
+        #quickintro.textbox h1 {
+            background-color: #616b81;
+            color: white;
+        }
+        #quickintro.textbox p {
+            color: rgb(0, 0, 0);
+        }
+    }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* AboutMe HTML Style */
+
+    /* Settings for my Background textbox */
+        #originstory.textbox {
+            transition: 0.5s;
+            width: 40%;
+            background-color: #85aac2;
+        }
+        #originstory.textbox p {
+            margin: 0% 3% 5%;
+            transition: 0.5s;
+            font-size: 95%;
+            opacity: 100%;
+        }
+
+        /* Settings for when you hover over the Background textbox */
+            #originstory:hover {
+                transition: 0.5s;
+                background-color: #a6d4f3;
+            }
+            #originstory:hover p {
+                transition: 0.5s;
+                font-size: 100%;
+            }
+
+    /* Settings for my Aspirations textbox */
+        #aspirations.textbox {
+            transition: 0.5s;
+            width: 40%;
+            background-color: #60a7e9;
+        }
+    
+        #aspirations.textbox p {
+            margin: 0% 3% 5%;
+            transition: 0.5s;
+            font-size: 95%;
+            opacity: 100%;
+        }
+    
+        /* Settings for when you hover over the Aspirations textbox */
+            #aspirations:hover {
+                transition: 0.5s;
+                background-color: #8ef7ff;
+            }
+        
+            #aspirations:hover p {
+                transition: 0.5s;
+                font-size: 100%;
+            }
+    
+        @media (max-width:768px){
+            #originstory.textbox {
+                width: 100%;
+            }
+            #originstory.textbox p {
+                font-size: 100%;
+                opacity: 100%;
+            }
+
+            #aspirations.textbox {
+                width: 100%;
+            }
+            #aspirations.textbox p {
+                font-size: 100%;
+                opacity: 100%;
+            }
+        }
+
+    /* Settings for my Friends and Family textbox */
+        #Friendmily.textbox {
+            background-color: #86d7f0;
+        }
+
+        #Friendmily.textbox p {
+            transition: 0.5s;
+            font-size: 1px;
+            opacity: 0%;
+        }
+
+        /* Settings for when you hover over the Friends and Family textbox */
+            #Friendmily:hover {
+                transition: 0.5s;
+                background-color: #b7d0ff;
+                @media (min-width:768px){
+                    img.friendsimage {
+                        height: 45%;
+                        width: 18%;
+                    }
+                }
+            }
+            #Friendmily:hover p {
+                transition: 0.5s;
+                font-size: 100%;
+                opacity: 100%;
+            }
+
+            img.friendsimage {
+                height: 0px;
+                width: 15%;
+            }
+
+            @media (max-width:768px){
+                #Friendmily.textbox p {
+                    font-size: 100%;
+                    opacity: 100%;
+                }
+                img.friendsimage {
+                    margin: 1%;
+                    height: 25%;
+                    width: 30%;
+                }
+            }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/*Hobbies HTML file*/
+
+    /* Settings for the first hobby */
+            
+        /* Drawings Style */
+            .drawingcontainer {
+                width: 80%;
+                transition: 0.5s;
+                opacity: 0%;
+                margin: 0% 6% 0% 2%;
+                display: grid; 
+                grid-auto-columns: 45px; 
+                grid-auto-rows: 45px;
+                gap: 5px;
+            }
+
+            .drawingcontainer > div img {
+                max-width: 100%;
+            }
+
+            /* First Drawing */
+            .drawingex1 {
+                grid-area: 1 / 1 / span 1 / span 4;
+            }
+            .drawingex1 > img {
+                border-radius: 50%;
+                width: 100%;
+            }
+
+            /* Second Drawing */
+            .drawingex2 {
+                grid-area: 1 / 5 / span 1 / span 4;
+            }
+            .drawingex2 > img {
+                border-radius: 12px;
+                width: 100%;
+            }
+
+            /* Third Drawing */
+            .drawingex3 {
+                grid-area: 5 / 1 / span 3 / span 4;
+            }
+            .drawingex3 > img {
+                border-radius: 25px;
+                width: 100%;
+            }
+        
+        @media (max-width:768px){
+            .drawingcontainer {
+                opacity: 100%;
+                grid-auto-columns: 40px; 
+                grid-auto-rows: 40px;
+            }
+            .drawingex2 {
+                grid-area: 1 / 5 / span 1 / span 3;
+            }
+            .drawingex3 {
+                grid-area: 5 / 1 / span 4 / span 6;
+            }
+        }
+
+    /* Text styling */
+
+        #hobby1.textbox {
+            width: 40%;
+            transition: 0.5s;
+            margin: auto;
+            background-color: #6e607a;
+        }
+
+        #hobby1.textbox p {
+            transition: 0.5s;   
+            display: float;
+            float: left;
+            color: #6e607a;
+        }
+
+        #hobby1:hover {
+            transition: 0.5s;
+            background-color: #ffd0f3;
+            img.drawingex {
+                height: auto;
+                opacity: 100%;
+            }
+            .drawingcontainer {
+                opacity: 100%;
+            }
+        }
+
+    /* Settings for the Second Hobby */
+
+        #hobby2.textbox {
+            width: 40%;
+            transition: 0.5s;
+            margin: auto;
+            background-color: #bda3d4;
+        }
+
+        #hobby2.textbox p {
+            opacity: 0%;
+        }
+
+        #hobby2:hover {
+            transition: 0.5s;
+            background-color: #ffd0f3;
+        }
+        #hobby2:hover p {
+            transition: 0.5s;
+            opacity: 100%;
+        }
+        
+        @media (max-width:768px)
+        {
+            #hobby1.textbox {
+                width: 80%;
+                background-color: #ffd0f3;
+            }
+            #hobby2.textbox {
+                width: 80%;
+            }
+            #hobby2.textbox p {
+                opacity: 100%;
+            }
+            iframe.singingex1 {
+                transition: 0.5s;
+                opacity: 100%;
+            } 
+        }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Education styling */
+    #educontent {
+        justify-content: center;
+    }
+    #educontent > .textbox {
+        width: 30%;
+        margin: 1%;
+        h1 {
+            height: 4%;
+        }
+        a {
+            text-align: center;
+        }
+    }
+
+    #schoollink {
+        margin: 0% 5% 10%;
+    }
+
+    /* Primary School Textbox Code */
+        #primsch {
+            background-color: #5a6188;
+        }
+
+        #primsch > p {
+            color: #ffffff;
+        }
+        #primsch > ul {
+            color: #ffffff;
+        }
+        #primsch > a {
+            color: #ffffff;
+        }
+        #primsch > a:hover {
+            color: #dce2ff;
+        }
+
+    /* Secondary School Textbox Code */
+        #secsch {
+            background-color: #c8c1e9;
+        }
+        #secsch > a:hover {
+            color: #0a5ebe;
+        }
+
+    /* Polytechnic Textbox Code */
+        #polysch {
+            background-color:#f1bdce;
+        }
+        #polysch > a:hover {
+            color: #da4242;
+        }
+
+    @media (max-width:768px)
+    {
+        #educontent > .textbox 
+        {
+            width: 80%;
+        }
+    }
